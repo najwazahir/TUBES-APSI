@@ -1,0 +1,342 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+        "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+        "Source Han Sans CN", sans-serif;
+}
+
+.main-container {
+    overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+    box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+    outline: 0;
+}
+
+.main-container {
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    margin: 0 auto;
+}
+
+.box {
+    position: absolute;
+    width: 1440px;
+    height: 1024px;
+    top: 0;
+    left: 0;
+    /* --- PERBAIKAN BACKGROUND IMAGE DI SINI --- */
+    background-image: url('./assets/images/ChatGPT Image 3 Jun 2025, 13.34.49 1.jpg'); /* GANTI DENGAN PATH GAMBAR ANDA YANG BENAR */
+    background-repeat: no-repeat;
+    background-size: cover; /* Untuk mengisi seluruh area .box */
+    background-position: center; /* Untuk memposisikan gambar di tengah */
+    overflow: hidden;
+    /* Warna background solid asli #392c1e dihilangkan atau bisa digunakan sebagai fallback jika gambar tidak dimuat */
+    /* background: #392c1e; */
+    z-index: 1; /* Pastikan ini di bawah elemen yang harus terlihat di atas background */
+}
+
+.group {
+    position: absolute;
+    width: 1440px;
+    height: 125px;
+    top: 0;
+    left: 0;
+    background: #d8cfbf;
+    z-index: 4;
+}
+
+.text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    width: 219px;
+    height: 64px;
+    top: 31px;
+    left: 1135px;
+    color: #392c1e;
+    font-family: 'Just Another Hand', var(--default-font-family);
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 64px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 5;
+}
+
+.text-2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 37px;
+    top: 44px;
+    left: 172px;
+    color: #000000;
+    font-family: Katibeh, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 37px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 7;
+}
+
+.pic {
+    position: absolute;
+    width: 55px;
+    height: 35px;
+    top: 45px;
+    left: 84px;
+    background: url('./assets/images/d1e38768-49fe-4b33-956d-9918cc91e0f2.svg')
+        no-repeat center;
+    background-size: cover;
+    z-index: 6;
+    border-radius: 5px;
+}
+
+/* Bagian .img ini sudah TIDAK DIPERLUKAN jika background diterapkan pada .box */
+/* Jika Anda masih memiliki <div class="img"></div> di HTML, HAPUSLAH itu. */
+/*
+.img {
+    position: absolute;
+    width: 1517px;
+    height: 1011px;
+    top: 81px;
+    left: 0;
+    background: url('./assets/images/fa874ae00417514433d972ba8725f359075e5560.png')
+        no-repeat center;
+    background-size: cover;
+    z-index: 1;
+}
+*/
+
+.group-2 {
+    position: absolute;
+    width: 1440px;
+    height: 899px;
+    top: 125px;
+    left: 0;
+    background: rgba(216, 207, 191, 0.25); /* Overlay untuk membuat background lebih redup */
+    z-index: 2; /* Pastikan ini di atas background tapi di bawah konten lain */
+}
+
+.section {
+    position: absolute;
+    width: 624px;
+    height: 300px;
+    top: 362px;
+    left: 408px;
+    z-index: 8;
+    border-radius: 20px;
+}
+
+.box-2 {
+    position: relative;
+    width: 555px;
+    height: 92px;
+    margin: 161px 0 0 34px;
+    font-size: 0px;
+    z-index: 10;
+    overflow: visible auto;
+    border-radius: 20px;
+}
+
+.text-3 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    width: 373px;
+    height: 40px;
+    margin: 25px 0 0 91px;
+    color: #392c1e;
+    font-family: Katibeh, var(--default-font-family);
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 12;
+}
+
+.wrapper {
+    position: absolute;
+    width: 555px;
+    height: 92px;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    z-index: 11;
+    border-radius: 20px;
+}
+
+.group-3 {
+    position: absolute;
+    width: 624px;
+    height: 300px;
+    top: 0;
+    left: 0;
+    background: #d8cfbf;
+    z-index: 9;
+    border-radius: 20px;
+}
+
+.box-3 {
+    position: absolute;
+    width: 555px;
+    height: 92px;
+    top: 408px;
+    left: 442px;
+    font-size: 0px;
+    z-index: 13;
+    border-radius: 20px;
+}
+
+.text-4 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    width: 373px;
+    height: 40px;
+    margin: 23px 0 0 91px;
+    color: #392c1e;
+    font-family: Katibeh, var(--default-font-family);
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 15;
+}
+
+.wrapper-2 {
+    position: absolute;
+    width: 555px;
+    height: 92px;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    z-index: 14;
+    border-radius: 20px;
+}
+
+.box-4 {
+    position: absolute;
+    width: 1440px;
+    height: 75px;
+    top: 949px;
+    left: 0;
+    background: #d8cfbf;
+    z-index: 3;
+}
+
+.group-4 {
+    position: absolute;
+    width: auto; /* Ubah ke auto agar lebar menyesuaikan konten */
+    height: 41px;
+    top: 966px;
+    left: 975px;
+    z-index: 16;
+    display: flex; /* Gunakan flexbox untuk tata letak ikon yang mudah */
+    align-items: center; /* Pusatkan secara vertikal */
+    justify-content: flex-start; /* Mulai dari kiri */
+    gap: 15px; /* Jarak antar item */
+    padding-right: 20px; /* Tambahkan padding agar tidak terlalu mepet ujung */
+}
+
+/* --- PERBAIKAN PADA ICON CONTACT DI SINI --- */
+/* Hapus atau komentari aturan CSS lama ini untuk .text-5, .text-6, .text-7 */
+/* Ini adalah sisa dari Font Awesome yang mungkin ditulis sebagai teks */
+/*
+.text-5 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    width: 95px;
+    height: 27px;
+    top: 0;
+    left: 162px;
+    color: #000000;
+    font-family: 'Font Awesome 5 Free', var(--default-font-family);
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 27px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 18;
+}
+.text-6 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    width: 35px;
+    height: 41px;
+    top: 0;
+    left: 344px;
+    color: #000000;
+    font-family: 'Font Awesome 5 Free', var(--default-font-family);
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 36.8px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 19;
+}
+.text-7 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    width: 62px;
+    height: 41px;
+    top: 0;
+    left: 257px;
+    color: #000000;
+    font-family: 'Font Awesome 5 Free', var(--default-font-family);
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 36.8px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 20;
+}
+*/
+
+/* Aturan untuk teks "Contact Us" */
+.text-8 {
+    display: flex; /* Jadikan flex item */
+    align-items: center; /* Pusatkan secara vertikal dengan ikon */
+    justify-content: center; /* Pusatkan secara horizontal jika sendiri */
+    color: #000000;
+    font-family: Katibeh, var(--default-font-family);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: normal; /* Atur ulang line-height agar tidak memotong */
+    white-space: nowrap;
+    /* z-index tidak perlu di sini jika menggunakan flexbox di parent */
+}
+
+/* Aturan baru untuk ikon Font Awesome */
+.icon-contact {
+    font-family: 'Font Awesome 5 Free'; /* PENTING! Pastikan ini sesuai dengan cara Font Awesome dimuat */
+    font-weight: 900; /* Untuk ikon solid (fas) */
+    font-size: 32px; /* Ukuran ikon, sesuaikan */
+    color: #000000; /* Warna ikon, sesuaikan */
+    display: flex; /* Jadikan flex item */
+    align-items: center; /* Pusatkan ikon secara vertikal di dalam tinggi baris */
+    height: 100%; /* Ambil tinggi penuh dari parent flex container */
+}
